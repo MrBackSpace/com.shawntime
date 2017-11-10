@@ -9,7 +9,7 @@
 
        <bean id="abstractDataSource" abstract="true" class="com.alibaba.druid.pool.DruidDataSource" init-method="init"
              destroy-method="close">
-              <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+              <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
               <!-- 基本属性 url、user、password -->
               <property name="url" value="${shawnTime.jdbc.url}"/>
               <!-- 配置初始化大小、最小、最大 -->
